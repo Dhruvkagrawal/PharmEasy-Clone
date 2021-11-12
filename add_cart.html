@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      PharmEasy: Online Pharmacy & Medical Store in India | 5M+ ... pharmeasy.in
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/landingpage.css" />
+    <link rel="stylesheet" href="/styles/add_cart.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div id="header1">
+        <img
+          src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
+          alt="logo"
+          onclick="(location.href ='index.html')"
+        />
+
+        <div class="select">
+          <p id="pinhere">Select Pincode</p>
+          <img
+            src="https://image.flaticon.com/icons/png/128/25/25243.png"
+            alt=""
+            id="useme1234"
+          />
+          <div></div>
+          <div>
+            <input
+              type="text"
+              placeholder="Search for Medicines / Healthcare Products"
+              class="Search"
+              id="search1234"
+            />
+          </div>
+          <a class="search" href="#"
+            ><img
+              src="https://image.flaticon.com/icons/png/128/2089/2089805.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="headerleft" id="useme12">
+          Don't have a prescriptions?
+          <br />
+          Get Started
+          <img
+            src="https://image.flaticon.com/icons/png/128/44/44571.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="header2">
+        <div class="downhead">
+          <span
+            ><a href="#" style="color: white"
+              >Order Medicines</a
+            ></span
+          >
+          <span
+            ><a href="hcareProduct.html" style="color: white"
+              >Healthcare Products</a
+            ></span
+          >
+          <a href="#" style="color: white">Diagnostic Tests</a>
+        </div>
+        <div class="righthead" id="rit">
+          <img
+            src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg"
+            alt=""
+            onclick="(location.href ='#')"
+          />
+          <p><a href="#" style="color: white">Offers</a></p>
+
+          <img
+            src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg"
+            onclick="pop()"
+          />
+          <p id="makemeuser">
+            <a href="#" style="color: white" id="useme">Login/Signup</a>
+          </p>
+          <p id="useruser">User</p>
+
+          <img
+            src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg"
+            alt=""
+            onclick="(location.href='cart.html')"
+          />
+          <p><a href="cart.html" style="color: white">Cart</a></p>
+        </div>
+      </div>
+    </header>
+
+    <!-- add cart -->
+    <main class="divide">
+      <section class="add_cart1">
+        <img
+          src="https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-front-2-1607336671.jpg?dim=240x240&dpr=1.25&q=100"
+          alt=""
+          id="slide"
+        />
+        <ul class="navigation">
+          <li>
+            <img
+              src="https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-box-front-1-1607336525.jpg?dim=100x80&dpr=1.25&q=100"
+              alt=""
+              onclick="slideImg('slide',this.src)"
+              id="img1"
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-front-2-1607336671.jpg?dim=100x80&dpr=1.25&q=100"
+              alt=""
+              onclick="slideImg('slide',this.src)"
+              id="img2"
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-combo-3-1607336476.jpg?dim=100x80&dpr=1.25&q=100"
+              alt=""
+              onclick="slideImg('slide',this.src)"
+              id="img3"
+            />
+          </li>
+        </ul>
+      </section>
+      <div class="add_cart2">
+        <h2 id="tabname">Ecosprin 75mg strip of 14 tablets</h2>
+        <p id="tabcompany">By USV PVT LTD</p>
+        <h5 class="p10" id="stock">In Stock</h5>
+        <div class="add_insite">
+          <h2 id="actual">₹4.13*</h2>
+          <p>MRP</p>
+          <p class="p2" id="original">₹4.86</p>
+          <h5 id="taboff">15% OFF</h5>
+        </div>
+        <h6>Inclusive of all taxes</h6>
+        <button type="button" onclick="cartme()" id="carted">
+          Add To Cart
+        </button>
+      </div>
+      <div class="add_cart3">
+        <h5 id="showcart">1 item in cart</h5>
+        <button type="button" onclick="(location.href='cart.html')">
+          View Cart
+        </button>
+      </div>
+    </main>
+    <div id="getsome"></div>
+    <script>
+      function slideImg(id, source) {
+        document.getElementById(id).src = source;
+      }
+    </script>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="/src/cart.js"></script>
+<script src="/src/login.js"></script>
+<script src="/src/signup.js"></script>
